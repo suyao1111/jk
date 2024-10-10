@@ -51,7 +51,7 @@ const workerConfig = {
     // Example TCP Monitor
     {
       id: 'linf6886-qinglong2.hf.space/crontab',
-      name: '青龙面板',
+      name: '青龙面板2',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
