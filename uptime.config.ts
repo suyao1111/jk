@@ -3,8 +3,8 @@ const pageConfig = {
   title: "AM科技's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://linf6886-qinglong2.hf.space', label: '青龙面板', highlight: true },
- // { link: 'https://youtube.com/@AM_CLUB', label: 'AM科技' },
+    { link: 'https://am.809098.xyz', label: '青龙面板', highlight: true },
+    { link: 'https://youtube.com/@AM_CLUB', label: 'AM科技' },
  // { link: 'https://github.com/amclubs', label: 'GitHub' },
  // { link: 'https://809098.xyz', label: 'Blog'},
   ],
@@ -18,23 +18,23 @@ const workerConfig = {
   // Define all your monitors here
   monitors: [
     // Example HTTP Monitor
-    {
+   // {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'am.809098.xyz',
+   //   id: 'am.809098.xyz',
       // `name` is used at status page and callback message
-      name: '青龙面板',
+   //   name: '个人博客',
       // `method` should be a valid HTTP Method
-      method: 'GET',
+   //   method: 'GET',
       // `target` is a valid URL
-      target: 'https://linf6886-qinglong2.hf.space',
+    //  target: 'https://am.809098.xyz',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
+   //   tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://linf6886-qinglong2.hf.space',
+   //   statusPageLink: 'https://am.809098.xyz',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       // expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
+   //   timeout: 10000,
       // [OPTIONAL] headers to be sent
       // headers: {
       //   'User-Agent': 'Uptimeflare',
@@ -50,14 +50,12 @@ const workerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'https://linf6886-qinglong2.hf.space',
-      name: 'qlmb',
+      id: 'linf6886-qinglong2.hf.space/crontab',
+      name: '青龙面板',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://linf6886-qinglong2.hf.space',
-      tooltip: 'My production server monitor',
-      statusPageLink: 'https://linf6886-qinglong2.hf.space',
+      target: 'https://linf6886-qinglong2.hf.space/crontab',
       timeout: 10000,
     },
   ],
